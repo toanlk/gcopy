@@ -18,6 +18,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
   executeScripts(null, [ 
       { file: "js/jquery-3.3.1.min.js" }, 
       { file: "js/moment-with-locales.min.js" },
+      { file: "js/jquery.ba-replacetext.min.js" },
       { file: "/src/bg/custom.js" }
   ])
 });
