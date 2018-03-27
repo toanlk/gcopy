@@ -1,4 +1,4 @@
-function searchReplace() {
+function searchReplace(today) {
     if($("body > div.dw").find(".aoD").length > 0) {
         var content = $("body > div.dw").find(".aoD").html();
         content = $("input[name='subjectbox']").val();
@@ -14,4 +14,6 @@ function searchReplace() {
     moment.locale('ja');
     var today = moment().format('MMMM Do YYYY');
     console.log(today);
+
+    searchReplace(today);
 })();

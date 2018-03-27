@@ -42,19 +42,12 @@ function goToInbox() {
 
 chrome.browserAction.onClicked.addListener(function (tab) {
 
-  goToInbox();
+  //goToInbox();
 
   executeScripts(null, [ 
       { file: "js/jquery-3.3.1.min.js" }, 
       { file: "js/moment-with-locales.min.js" },
       { file: "js/jquery.ba-replacetext.min.js" },
-      { file: "/src/bg/custom.js" }
+      { file: "js/custom.js" }
   ])
 });
-
-// onClick handle
-// chrome.browserAction.onClicked.addListener(function (tab) {
-//   chrome.tabs.executeScript(tab.ib, {
-//     file: '/src/bg/custom.js'
-//   });
-// });
