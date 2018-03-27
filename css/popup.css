@@ -10,22 +10,23 @@ body {
 
 .header {
   align-items: center;
-	background: linear-gradient(160deg, #32067c, #150233);
+	background-color: #4285f4;
   height: 4rem;
   display: flex;
+  width: 100%;
+  display: none;
 }
 
-.header__link:focus {
-  outline: none;
-}
-
-.header__logo {
-  display: inline-block;
+.header__link {
+  color: #fff;
   margin: .2rem 0 0 1.5rem;
-  -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1.0, 1.0);
   transform: translateZ(0);
-  height: 2rem;
+  font-size: 18px;
+  text-decoration: none;
+}
+.header__link:focus {
+  outline: none;
 }
 
 .container {
